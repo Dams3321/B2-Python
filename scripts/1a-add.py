@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-#Damien
-#Créer le 15/10/18
 
+# description: Demander deux nombres à l’utilisateur,afficher le résultat de l’addition.
+# date: 15/10/2018
+# auteur : Damien Pommier
 
 def AfficheSomme(a,d):  #definie deux parametres 
 	print (a+d)
@@ -14,4 +15,3 @@ def AfficheSomme(a,d):  #definie deux parametres
 
 print(" a + d = ") #affiche la somme des deux nombres saisies
 AfficheSomme(i,j) #affiche les nombres saisies
-
