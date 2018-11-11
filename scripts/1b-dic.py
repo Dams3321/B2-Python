@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-#Damien
-#Créer le 15/10/18
+
+# description: saisie utilisateur de plusieurs prénoms.
+# date: 15/10/2018
+# auteur : Damien Pommier
 
 Tab =()
 
