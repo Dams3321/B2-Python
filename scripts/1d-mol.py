@@ -12,7 +12,7 @@ import signal
 winn = False
 value_min = 0
 value_max = 100
-random = random.randint(value_min, value_max)
+aleat = random.randint(value_min, value_max)
 user_input = ''
 
 
@@ -41,14 +41,14 @@ while winn == False :
   user_input = input('Entre un nombre compris entre '+str(value_min)+' et '+str(value_max)+' : ')
   if user_input == 'q':
     break
-  if int(user_input) > random:
+  if int(user_input) > aleat:
     print('Ta proposition est trop grande !')
-  elif int(user_input) < random:
+  elif int(user_input) < aleat:
     print('Ta proposition est trop petite !')
   else:
     winn = True
 
 if winn == True:
-  display_result(random)
+  display_result(aleat)
 else:
   display_result()
