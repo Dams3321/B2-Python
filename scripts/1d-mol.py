@@ -9,7 +9,7 @@ import signal
 
 #Variables
 
-win = False
+winn = False
 value_min = 0
 value_max = 100
 random = random.randint(value_min, value_max)
@@ -37,8 +37,8 @@ signal.signal(signal.SIGINT, exit_game)
 
 #Tant que l'utilisateur n'a pas trouvé le nombre aléatoire
 
-while win == False :
-  user_input = input('Entre un nombre compris entre '+str(min_value)+' et '+str(max_value)+' : ')
+while winn == False :
+  user_input = input('Entre un nombre compris entre '+str(value_min)+' et '+str(value_max)+' : ')
   if user_input == 'q':
     break
   if int(user_input) > random:
@@ -46,9 +46,9 @@ while win == False :
   elif int(user_input) < random:
     print('Ta proposition est trop petite !')
   else:
-    win = True
+    winn = True
 
-if win == True:
+if winn == True:
   display_result(random)
 else:
   display_result()
